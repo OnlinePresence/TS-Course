@@ -3,7 +3,9 @@
 function add(n1: number, n2: number, showResult: boolean, phrase: string) {
     const result = n1+n2;
     if (showResult) {
-        console.log(phrase+result);
+        let combinedResult :string = phrase + result;
+        console.log(combinedResult);
+        return combinedResult;
     } else {
         return result;
     }
@@ -46,7 +48,7 @@ for (const hobby of person.hobbies)  {
 
 //ENUM TYPE
 
-enum Role { SUV, SEDAN,HATCHBACK };
+enum Role { SUV, SEDAN,HATCHBACK }
 
 const car = {
     brand: 'Ford',
